@@ -3,25 +3,24 @@
 include_once("../includes/menu.php");
 include_once("../app/config.php");
 
-if(isset($_POST['submit'])){
 
+if(isset($_POST['submit'])){
+    
     $nome = $_POST['nome'];
     $id_dm = $_POST['id_dm'];
     $grau = $_POST['grau'];
     $tipo = $_POST['tipo'];
     $data_nasc = $_POST['data_nasc'];
-
-
+    
     $result = mysqli_query(
         $conn, 
-        "INSERT INTO
-        membros(nome, id_dm, grau, tipo, data_nasc)
+        "INSERT INTO membros(nome, id_dm, grau, tipo, data_nasc, janeiro, fevereiro, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro)
         VALUES 
-        ('$nome', '$id_dm', '$grau', '$tipo', '$data_nasc')"
+        ('$nome', '$id_dm', '$grau', '$tipo', '$data_nasc', 'definir', 'definir', 'definir', 'definir', 'definir', 'definir','definir', 'definir', 'definir', 'definir', 'definir', 'definir')"
     );
 
 }
-
+    
 ?>
 
 <!DOCTYPE html>

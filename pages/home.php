@@ -27,6 +27,9 @@ include_once("../includes/menu.php");
 
             </a>
 
+
+            <a href="tesouraria.php">tesouraria</a>
+
     </main>
 
 </body>

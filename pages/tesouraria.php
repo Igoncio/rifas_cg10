@@ -15,7 +15,7 @@ $num_rows = $result->num_rows;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/membros.css">
+    <link rel="stylesheet" href="../assets/css/tesouraria.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Document</title>
 </head>
@@ -29,11 +29,20 @@ $num_rows = $result->num_rows;
       <thead>
         <tr>
           <th>#</th>
-          <th>ID</th>
           <th>Nome</th>
-          <th>Grau</th>
-          <th>Tipo</th>
-          <th>Idade</th>
+          <th>Janeiro</th>
+          <th>Fevereiro</th>
+          <th>Março</th>
+          <th>Abril</th>
+          <th>Maio</th>
+          <th>Junho</th>
+          <th>Julho</th>
+          <th>Agosto</th>
+          <th>Setembro</th>
+          <th>Outubro</th>
+          <th>Novembro</th>
+          <th>Dezembro</th>
+          <th>Ações</th>
           <!-- <th>Ações</th> -->
         </tr>
       </thead>
@@ -47,11 +56,20 @@ $num_rows = $result->num_rows;
             $user_data = $result->fetch_assoc();
             echo "<tr>"; 
             echo "<td>". $i . "</td>";
-            echo "<td>" . $user_data['id_dm'] . "</td>";
-            echo "<td>" . $user_data['nome'] . "</td>";             
-            echo "<td>" . $user_data['grau'] . "</td>";
-            echo "<td>" . $user_data['tipo'] . "</td>";
-            echo "<td>" . $user_data['data_nasc'] . "</td>";
+            echo "<td>" . $user_data['nome'] . "</td>";
+            echo "<td>" . $user_data['janeiro'] . "</td>";
+            echo "<td>" . $user_data['fevereiro'] . "</td>";             
+            echo "<td>" . $user_data['marco'] . "</td>";
+            echo "<td>" . $user_data['abril'] . "</td>";
+            echo "<td>" . $user_data['maio'] . "</td>";
+            echo "<td>" . $user_data['junho'] . "</td>";
+            echo "<td>" . $user_data['julho'] . "</td>";             
+            echo "<td>" . $user_data['agosto'] . "</td>";
+            echo "<td>" . $user_data['setembro'] . "</td>";
+            echo "<td>" . $user_data['outubro'] . "</td>";
+            echo "<td>" . $user_data['novembro'] . "</td>";
+            echo "<td>" . $user_data['dezembro'] . "</td>";
+            echo "<td>'asdfsdfgsdf'</td>";
             echo "</tr>";
         }
 
