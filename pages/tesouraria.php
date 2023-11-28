@@ -5,6 +5,7 @@ include_once("../app/config.php");
 
 $sql = "SELECT * FROM membros ORDER BY nome;";
 
+
 $result = $conn->query($sql); 
 $num_rows = $result->num_rows;
 
@@ -16,6 +17,7 @@ $num_rows = $result->num_rows;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/tesouraria.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Document</title>
 </head>
@@ -69,7 +71,7 @@ $num_rows = $result->num_rows;
             echo "<td>" . $user_data['outubro'] . "</td>";
             echo "<td>" . $user_data['novembro'] . "</td>";
             echo "<td>" . $user_data['dezembro'] . "</td>";
-            echo "<td>'asdfsdfgsdf'</td>";
+            echo '<td><a href="../pages/pagar.php?id=$user_data[id]> aa </i></a></td>';
             echo "</tr>";
         }
 

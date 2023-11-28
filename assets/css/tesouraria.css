@@ -26,16 +26,26 @@ th{
     padding: 20px 15px;
     text-align: left;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     color: #fff;
     text-transform: uppercase;
 }
 td{
-    padding: 15px;
+    padding: 17px;
     text-align: left;
     vertical-align:middle;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 14px;
     color: #424242;
     border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+#pagar{
+    color: rgb(96, 164, 28);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#pagar:hover{
+    color: rgb(255, 255, 255);
 }
