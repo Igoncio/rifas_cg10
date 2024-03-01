@@ -10,4 +10,11 @@ body{
   background-size: cover;
 }
 
-
+.area-menu{
+  display: flex;
+  align-items: center;
+  border-radius: 9px;
+  width: 130px;
+  height: 60vh;
+  background-color: aliceblue 
+}

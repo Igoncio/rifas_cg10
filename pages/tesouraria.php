@@ -22,15 +22,11 @@ $num_rows = $result->num_rows;
     <title>Document</title>
 </head>
 <body>
-
 <section>
-
-  <h1>Gerenciamento de membros</h1>
   <div class="tbl-header">
     <table cellpadding="0" cellspacing="0" border="0">
       <thead>
         <tr>
-          <th>#</th>
           <th>Nome</th>
           <th>Janeiro</th>
           <th>Fevereiro</th>
@@ -54,10 +50,8 @@ $num_rows = $result->num_rows;
     <table cellpadding="0" cellspacing="0" border="0">
       <tbody>
         <?php
-           for ($i = 1; $i < $num_rows; $i++) {
-            $user_data = $result->fetch_assoc();
+            while($user_data = mysqli_fetch_assoc($result)){
             echo "<tr>"; 
-            echo "<td>". $i . "</td>";
             echo "<td>" . $user_data['nome'] . "</td>";
             echo "<td>" . $user_data['janeiro'] . "</td>";
             echo "<td>" . $user_data['fevereiro'] . "</td>";             
@@ -71,9 +65,12 @@ $num_rows = $result->num_rows;
             echo "<td>" . $user_data['outubro'] . "</td>";
             echo "<td>" . $user_data['novembro'] . "</td>";
             echo "<td>" . $user_data['dezembro'] . "</td>";
-            echo '<td><a href="../pages/pagar.php?id=$user_data[id]> aa </i></a></td>';
-            echo "</tr>";
-        }
+            echo "<td> 
+              <a href='pagar.php?id=$user_data[id]'> 
+                <i class='bi bi-pencil-square' id='edit'></i>
+              </a>
+            </td>";
+            }
 
         ?>
 

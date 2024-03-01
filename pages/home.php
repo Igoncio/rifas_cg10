@@ -14,23 +14,6 @@ include_once("../includes/menu.php");
     <title>Document</title>
 </head>
 <body>
-    
-    <main class="container-geral">
-        
-        <div class="cards-gerais">
-
-            <a class="link-card" href="membros.php">
-
-                <div class="card-1">
-                    <p>Gerenciar Membros</p>
-                </div>
-
-            </a>
-
-
-            <a href="tesouraria.php">tesouraria</a>
-
-    </main>
 
 </body>
 </html>

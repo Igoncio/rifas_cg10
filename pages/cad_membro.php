@@ -70,29 +70,29 @@ if(isset($_POST['submit'])){
 
         <div class="form-row">
             <div class="input-box">
-                <label>Data de nacimento</label>
+                <label>Data de Iniciação</label>
                 <input name="data_nasc" required="" type="date">
             </div>
         </div>
 
-         <div class="form-row">
-            <div class="input-data textarea">
-   
-            <div class="form-row submit-btn">
-               <div class="input-data">
-                  <div class="inner"></div>
-                  <input name="submit" type="submit" value="Cadastrar">
-               </div>
-            </div>
 
-            <div class="form-row submit-btn">
-               <div class="input-data">
-                  <div class="inner"></div>
-                  <a href="membros.php">
-                  <input value="Voltar">
-                  </a>
-               </div>
+        <div class="area-btn">
+            <div class="form-row">
+                <div class="input-data textarea">
+        
+                    <div class="form-row submit-btn">
+                        <div class="input-data">
+                            <div class="inner"></div>
+                            <input name="submit" type="submit" value="Cadastrar">
+                        </div>
+                    </div>
+
+        
+                </div>
             </div>
+        </div>
+
+        
       </form>
     </div>
     
